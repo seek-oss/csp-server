@@ -1,0 +1,1 @@
+30 07 * * * ubuntu /home/ubuntu/csp-server/bash/rotate-elasticsearch-index.sh cspdata https://search-csp-elk-collector-*****.ap-southeast-2.es.amazonaws.com 30 >> /tmp/rotate-elasticsearch-index.log

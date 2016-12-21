@@ -1,0 +1,10 @@
+{
+  "@timestamp": "2016-07-07T12:01:03.044Z",
+  "csp-report": {
+    "document-uri": "http://example.com/signup.html",
+    "referrer": "",
+    "blocked-uri": "http://example.com/css/style.css",
+    "violated-directive": "style-src cdn.example.com",
+    "original-policy": "default-src \u0027none\u0027; style-src cdn.example.com; report-uri /_/csp-reports"
+  }
+}

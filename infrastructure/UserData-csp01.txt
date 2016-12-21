@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "127.0.0.1 `hostname`" >> /etc/hosts
+apt-get update
+apt-get install git python-pip -y
+pip install awscli
+dd if=/dev/zero of=/swap1GB bs=1024 count=1048576
+mkswap /swap1GB
+chown root:root /swap1GB
+chmod 0600 /swap1GB
+swapon /swap1GB
+sed -i 's/exit 0/swapon \/swap1GB; exit 0/' /etc/rc.local
