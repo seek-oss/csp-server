@@ -1,7 +1,9 @@
 CSP Server and Elasticsearch Feeder
 ===================================
 
-Node.js application designed to receive CSP (Content Security Policy) reports and inject them in Elasticsearch for analysis.
+CSP violation report endpoint using Elasticsearch as storage. Basically a https://report-uri.io/ alternative.
+
+It is a Node.js application designed to receive CSP (Content Security Policy) reports and inject them in Elasticsearch for analysis.
 
 - Node application uses http://restify.com/ framework
 - The application has been tested in Ubuntu 14.04 LTS and 16.04 LTS (both 64-bit). 
