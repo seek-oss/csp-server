@@ -5,7 +5,7 @@
   "description": "Worker for indexing into elasticsearch what comes from POST",
   "repository": {
     "type": "git",
-    "url": "git@github.com:SEEK-Jobs/csp-server.git"
+    "url": "git@github.com:seek-oss/csp-server.git"
   },
   "dependencies": {
     "async": "^0.9.0",

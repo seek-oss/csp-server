@@ -8,7 +8,7 @@ ssh ubuntu@xx.xx.xx.xx -i keypair.pem
 ### Get nodejs folder
 * For example check out the project
 ```sh
-git clone git@github.com:SEEK-Jobs/csp-server.git
+git clone git@github.com:seek-oss/csp-server.git
 ```
 
 * Configure application config.js with the relevant values

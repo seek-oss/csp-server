@@ -24,7 +24,7 @@ If so edit the [csp-server](./csp-server) file accordingly (enable the commented
 
 * To the get config from repo
 ```sh
-wget https://raw.githubusercontent.com/SEEK-Jobs/csp-server/master/nginx/csp-server
+wget https://raw.githubusercontent.com/seek-oss/csp-server/master/nginx/csp-server
 sudo mv csp-server /etc/nginx/sites-available
 sudo ln -s /etc/nginx/sites-available/csp-server /etc/nginx/sites-enabled/csp-server
 sudo rm /etc/nginx/sites-enabled/default

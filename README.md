@@ -27,7 +27,7 @@ AWS EC2 (Linux) running Nginx and Node.js -> AWS Elasticsearch Service
 TLDR; 
 * Checkout this project in your server
 ```sh
-git clone git@github.com:SEEK-Jobs/csp-server.git
+git clone git@github.com:seek-oss/csp-server.git
 ```
 
 * Edit `nodejs/config.js` and set the Elasticsearch URL, port and version
