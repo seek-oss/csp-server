@@ -55,7 +55,7 @@ module.exports = function(config, elasticsearch) {
 //        req.log.info(sprintf("Indexing to Elastic data %s", cspData));
         var yearMonthDay = timestamp.substr(0, 10).replace(/-/g, '.');  
         elasticClient.index({
-          index: 'cspdata-' + yearMonthDay,
+          index: config.ElasticSearchIndex + '-' + yearMonthDay,
           type: 'csp',
           body: cspData
         }, function(err) {
