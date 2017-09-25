@@ -1,13 +1,23 @@
 'use strict';
 
 var restify = require('restify'),
-  async = require('async');
+  async = require('async'),
+  fs = require('fs');
 
 module.exports = function(config, elasticsearch) {
-  var elasticClient;
+  var elasticClient, es_SSL = {};
+
+  // enable SSL CA verification when contacting elasticSearch
+  if(config.ElasticSearchSSLCA) {
+    es_SSL = {
+      ca: fs.readFileSync(config.ElasticSearchSSLCA),
+      rejectUnauthorized: config.ElasticSearchSSLStrict
+    }
+  }
 
   elasticClient = new elasticsearch.Client({
     host: config.ElasticSearchHost,
+    ssl: es_SSL,
 //    log: 'trace',
     log: 'error',
 //    log: 'info;',

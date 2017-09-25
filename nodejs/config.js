@@ -8,6 +8,8 @@ module.exports = {
   LogLevel: process.env.LogLevel || "warn",
   Port: process.env.PORT || 9000,
   ElasticSearchHost: process.env.ElasticSearchHost || "https://search-csp-server-********.****region****.es.amazonaws.com",
+  ElasticSearchSSLCA: process.env.ElasticSearchSSLCA || "",
+  ElasticSearchSSLStrict: process.env.ElasticSearchSSLStrict || false,
   ElasticSearchVersion: process.env.ElasticSearchVersion || "master",
   ElasticSearchIndex: process.env.ElasticSearchIndex || "cspdata"
 };
