@@ -41,8 +41,8 @@ Each POST will be sent to Elasticsearch into indices named *cspdata-YYYYMMDD*
 
 Endpoints:
 
-* `POST` http://localhost:9000/reportOnly/index - CSP report in json format
-* `GET` http://localhost:9000/reportOnly/_healthcheck - health check
+* `POST` http://localhost:9000/index - CSP report in json format
+* `GET` http://localhost:9000/_healthcheck - health check
 
 For details on how to configure a server  to support https (SSL) using Nginx, Node as service using PM2 manager, log rotation
 and setting up Elasticsearch in AWS continue reading:
